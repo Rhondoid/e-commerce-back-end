@@ -36,16 +36,15 @@ Product.init(
     },
     category: {
       type: DataTypes.INTEGER,
-      foreignKey: 'Category_id',
+      foreignKey: "Category_id",
     },
-    
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "product",
+    modelName: "Product",
   }
 );
 

@@ -14,11 +14,11 @@ ProductTag.init(
     autoIncrement: true,
   },
   product_id: {
-    type: DataTypes.INTERGER,
-    foreignKey: product_id,
+    type: DataTypes.INTEGER,
+    foreignKey: 'Product_id',
   },
   tag_id: {
-    type: DataTypes.INTERGER,
+    type: DataTypes.INTEGER,
     foreignKey: 'Tag_id',
   },
 
@@ -28,7 +28,7 @@ ProductTag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: 'ProductTag',
   }
 );
 
