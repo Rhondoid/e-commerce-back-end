@@ -36,7 +36,7 @@ Product.init(
     },
     category: {
       type: DataTypes.INTEGER,
-      foreignKey: category_id,
+      foreignKey: cpharmaategory_id,
     }
     
   },
