@@ -19,7 +19,7 @@ ProductTag.init(
   },
   tag_id: {
     type: DataTypes.INTERGER,
-    foreignKey: tag_id,
+    foreignKey: 'Tag_id',
   },
 
   },
