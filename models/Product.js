@@ -14,28 +14,28 @@ Product.init(
   {
     // define columns
     id: {
-    type: INTEGER,
+    type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
     },
     product_name: {
-      type: STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     price:{
-      type: DECIMAL,
+      type: DataTypes.DECIMAL,
       allowNull: false,
       isDecimal: true,
     },
     stock: {
-      type: INTEGER,
+      type: Datatypes.INTEGER,
       allowNull: false,
       defaultValue: 10,
       isNumeric: true,
     },
     category: {
-      type: INTEGER,
+      type: DataTypes.INTEGER,
       foreignKey: Category_id,
     }
     
