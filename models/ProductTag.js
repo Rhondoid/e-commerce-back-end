@@ -15,11 +15,11 @@ ProductTag.init(
   },
   product_id: {
     type: DataTypes.INTEGER,
-    foreignKey: 'Product_id',
+    foreignKey: 'product_id',
   },
   tag_id: {
     type: DataTypes.INTEGER,
-    foreignKey: 'Tag_id',
+    foreignKey: 'tag_id',
   },
 
   },
