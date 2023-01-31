@@ -34,9 +34,13 @@ Product.init(
       defaultValue: 10,
       isNumeric: true,
     },
-    category: {
+    category_id: {
       type: DataTypes.INTEGER,
-      foreignKey: "category_id",
+      references: {
+        model: 'category',
+        key: 'id',
+        
+      } 
     },
   },
   {
@@ -44,7 +48,7 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "Product",
+    modelName: "product",
   }
 );
 
